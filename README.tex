@@ -8,16 +8,6 @@ This repository is the official implementation of [Estimating dynamic treatment 
 The paper addresses a gap in precision medicine research, focusing on the estimation of dynamic treatment regimes (DTRs) with ordinal outcomes, especially in the presence of interference where one patient's treatment may affect another's outcome. We introduce the Weighted Proportional Odds Model (WPOM), a regression-based, doubly-robust approach for single-stage DTR estimation that considers ordinal outcomes and accounts for interference, particularly within households. The proposed method incorporates covariate balancing weights derived from joint propensity scores to address interference. Through simulation studies, the authors demonstrate the double robustness of WPOM with adjusted weights. The paper also extends WPOM to multi-stage DTR estimation with household interference and applies the methodology to analyze longitudinal survey data from the Population Assessment of Tobacco and Health study.
 
 ## Requirements
-
-library(simstudy)
-library(ordinal)
-library(mets)
-# installing package to
-# import desired dataset
-library(datarium)
-library(caret)
-
-
  - R 3.6
  - `simstudy`
  - `ordinal`
